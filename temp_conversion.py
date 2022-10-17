@@ -36,3 +36,11 @@ def hotter_temp():
         print('30.2 degrees celsius')
     else:
         print('85.1 degrees fahrenheit')
+
+def convert_temperature(temp, origin_scale):
+    if origin_scale == 'celsius':
+        print(f'{temp * 9/5 + 32} degrees fahrenheit')  
+    elif origin_scale == 'fahrenheit':
+        print(f' {(temp - 32) * 5 / 9} degrees celsius')
+
+   
